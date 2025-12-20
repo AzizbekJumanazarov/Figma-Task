@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    background: url('/images/background-poster.png') center / cover no-repeat;
+    font-family: 'Instrument Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.site-header {
+}
+.site-footer {
+}
+
+svg path {
+    transition: fill 0.3s ease;
+}
+
+svg:hover path {
+    fill: #ff6600;
+}
+
+.button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
