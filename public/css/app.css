@@ -32,12 +32,12 @@ body {
 
 .button.main-button {
     color: #fff;
-    background: rgba(233, 43, 67, 1);
+    background: var(--primary-red);
 }
 
 .button.secondary-button {
     color: rgba(0, 0, 0, 1);
-    background: rgba(255, 255, 255, 1);
+    background: var(--primary-white);;
 }
 
 .button:hover {
@@ -83,28 +83,28 @@ body {
     margin: 3px;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
 }
 
 .header-address p:last-child {
     margin: 3px;
     font-size: 13px;
     font-weight: 400;
-    color: rgba(160, 174, 183, 1);
+    color: var(--primary-gray);
 }
 
 .header-phone p:first-child {
     margin: 3px;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
 }
 
 .header-phone p:last-child {
     margin: 3px;
     font-size: 13px;
     font-weight: 400;
-    color: rgba(160, 174, 183, 1);
+    color: var(--primary-gray);
 }
 
 .header-phone p img {
@@ -136,7 +136,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: rgba(255, 255, 255, 1);
+    background: var(--primary-white);;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -202,7 +202,7 @@ body {
 }
 
 .cards-block {
-    background: rgba(255, 255, 255, 1);
+    background: var(--primary-white);;
     display: grid;
     grid-template-columns: repeat(auto-fill, 269px);
     justify-content: space-around;
@@ -227,7 +227,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(233, 43, 67, 1);
+    background: var(--primary-red);
     cursor: pointer;
 }
 
@@ -289,7 +289,7 @@ body {
 
 .dates-list-item p {
     font-size: 10px;
-    color: rgba(76, 76, 79, 1);
+    color: var(--primary-black);;
     margin: 3px;
 }
 
@@ -297,15 +297,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 1);
+    background: var(--primary-white);;
     border-radius: 3px;
-    border-color: rgba(233, 43, 67, 1);
+    border-color: var(--primary-red);
 }
 
 .dates-list-price p {
     font-size: 11px;
     font-weight: 400;
-    color: rgba(76, 76, 79, 1);
+    color: var(--primary-black);;
     margin: 3px 5px;
 }
 
@@ -314,23 +314,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(233, 43, 67, 1);
+    background: var(--primary-red);
     border-radius: 3px;
-    border: 1px solid rgba(233, 43, 67, 1);
+    border: 1px solid var(--primary-red);
 }
 
 .dates-list-clock>p {
     font-size: 15px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
     margin: 7px 0;
 }
 
 .dates-list-clock button {
-    background: rgba(233, 43, 67, 1);
+    background: var(--primary-red);
     border: none;
     padding: 8px 16px;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
@@ -350,7 +350,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: rgba(12, 53, 66, 1);
+    background: var(--primary-green);
     padding: 28px 50px;
 }
 
@@ -365,7 +365,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
 }
 
 .menu-items p {
@@ -374,7 +374,7 @@ body {
     font-weight: 400;
     margin-bottom: 6px;
     margin-top: 6px;
-    color: rgba(160, 174, 183, 1);
+    color: var(--primary-gray);
 }
 
 .paying-items-single {
@@ -400,14 +400,14 @@ body {
 .paying-items p {
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-white);;
     margin: 0;
 }
 
 .paying-text p {
     font-size: 13px;
     font-weight: 400;
-    color: rgba(160, 174, 183, 1);
+    color: var(--primary-gray);
     margin: 1px;
 }
 
@@ -416,15 +416,15 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(160, 174, 183, 1);
-    background: rgba(12, 53, 66, 1);
+    border-top: 1px solid var(--primary-gray);
+    background: var(--primary-green);
     padding: 23px 51px;
 }
 
 .footer-helper p {
     font-size: 14px;
     font-weight: 400;
-    color: rgba(160, 174, 183, 1);
+    color: var(--primary-gray);
 }
 
 /********* END FOOTER SECTION ********/
@@ -444,3 +444,14 @@ body {
     }
 }
 
+/********* CSS VARIABLES ********/
+
+:root {
+    --primary-red: rgba(233, 43, 67, 1);
+    --primary-gray: rgba(160, 174, 183, 1);
+    --primary-white: rgba(255, 255, 255, 1);
+    --primary-green: rgba(12, 53, 66, 1);
+    --primary-black: rgba(76, 76, 79, 1);
+}
+
+/********* END CSS VARIABLES ********/
