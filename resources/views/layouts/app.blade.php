@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Figma Test by Azizbek Jumanazarov</title>
@@ -7,13 +7,10 @@
 </head>
 <body>
 <x-header />
-
-<main>
-    @yield('content')
-</main>
-
+    <main>
+        @yield('content')
+    </main>
 <x-footer />
-
 <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>
