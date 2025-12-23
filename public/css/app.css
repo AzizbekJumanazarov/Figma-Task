@@ -28,16 +28,16 @@ body {
     justify-content: center;
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    &.main-button {
-        color: #fff;
-        background: rgba(233, 43, 67, 1);
-    }
+.button.main-button {
+    color: #fff;
+    background: rgba(233, 43, 67, 1);
+}
 
-    &.secondary-button {
-        color: rgba(0, 0, 0, 1);
-        background: rgba(255, 255, 255, 1);
-    }
+.button.secondary-button {
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 .button:hover {
@@ -79,41 +79,37 @@ body {
     gap: 126px;
 }
 
-.header-address p {
-    &:first-child {
-        margin: 3px;
-        font-size: 16px;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-    }
-
-    &:last-child {
-        margin: 3px;
-        font-size: 13px;
-        font-weight: 400;
-        color: rgba(160, 174, 183, 1);
-    }
+.header-address p:first-child {
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
 }
 
-.header-phone p {
-    &:first-child {
-        margin: 3px;
-        font-size: 16px;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-    }
+.header-address p:last-child {
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(160, 174, 183, 1);
+}
 
-    &:last-child {
-        margin: 3px;
-        font-size: 13px;
-        font-weight: 400;
-        color: rgba(160, 174, 183, 1);
-    }
+.header-phone p:first-child {
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
 
-    & img {
-        width: 10px;
-        margin: 3px 3px;
-    }
+.header-phone p:last-child {
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(160, 174, 183, 1);
+}
+
+.header-phone p img {
+    width: 10px;
+    margin: 3px 3px;
 }
 
 .social-section {
@@ -144,10 +140,10 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
 
-    & .button {
-        margin: 8px 16px;
-    }
+.main-nav ul .button {
+    margin: 8px 16px;
 }
 
 .main-nav ul li a {
@@ -183,12 +179,12 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
 
-    & .button {
-        margin-top: 8px;
-        margin-bottom: 8px;
-        margin-right: 6px;
-    }
+.dates-section .button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 6px;
 }
 
 .dates-menu {
@@ -233,13 +229,13 @@ body {
     justify-content: center;
     background: rgba(233, 43, 67, 1);
     cursor: pointer;
+}
 
-    & p {
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        margin: 0;
-    }
+.cards-label p {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
 }
 
 .title-section p {
@@ -267,13 +263,13 @@ body {
     margin-bottom: 7px;
     margin-right: 7px;
     cursor: pointer;
+}
 
-    & p {
-        font-size: 12px;
-        font-weight: 400;
-        color: rgba(114, 114, 118, 1);
-        margin: 3px 4px;
-    }
+.cards-genre p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(114, 114, 118, 1);
+    margin: 3px 4px;
 }
 
 .dates-list-cards {
@@ -353,7 +349,6 @@ body {
 .footer-section {
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
     justify-content: space-between;
     background: rgba(12, 53, 66, 1);
     padding: 28px 50px;
@@ -409,13 +404,11 @@ body {
     margin: 0;
 }
 
-.paying-text {
-    & p {
-        font-size: 13px;
-        font-weight: 400;
-        color: rgba(160, 174, 183, 1);
-        margin: 1px;
-    }
+.paying-text p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(160, 174, 183, 1);
+    margin: 1px;
 }
 
 .footer-helper {
@@ -446,10 +439,8 @@ body {
 }
 
 @media (max-width: 768px) {
-    .main-nav ul {
-        & .button {
-            margin: 8px 16px 8px 0;
-        }
+    .main-nav ul .button {
+        margin: 8px 16px 8px 0;
     }
 }
 
